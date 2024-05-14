@@ -1,13 +1,11 @@
 {
-    "name": "bot",
+    "name": "TON Swap Bot",
     "version": "1.4.0",
     "main": "./dist/index.js",
     "description": "",
-    "repository": "https://github.com/delab-team/debot",
-    "author": "DeLab Team",
+    "author": "ittechhunter",
     "license": "MIT",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
         "build": "tsc",
         "build:digitalocean": "yarn install --production=false && yarn run build && rm -rf node_modules && yarn install --production --frozen-lockfile",
         "start": "ts-node src/bot.ts"
@@ -15,9 +13,11 @@
     "dependencies": {
         "@eversdk/core": "^1.41.1",
         "@eversdk/lib-node": "^1.41.1",
+        "axios": "1.6.8",
         "cors": "^2.8.5",
         "dotenv": "16.4.5",
         "express": "^4.18.2",
+        "mongoose": "8.3.4",
         "node-telegram-bot-api": "^0.61.0",
         "ts-node": "^10.9.1",
         "tsconfig-paths": "^3.14.1",
